@@ -8,7 +8,12 @@ const options = {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
+  ssl: true,
+  tls: true,
+  tlsAllowInvalidCertificates: false, // Set to true only for testing if needed
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 };
 
 let client;
