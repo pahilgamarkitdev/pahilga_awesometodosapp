@@ -19,7 +19,7 @@ const port = process.env.PORT || 5000;
 
 const startServer = async () => {
     await connectToMongoDB();
-    app.listen(port, () => {
+    app.listen(port, "0.0.0.0", () => {
         console.log(`Server is listening on http://localhost:${port}`);
     });
 };
